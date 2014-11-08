@@ -10,6 +10,7 @@ import vo.AccountVO;
 public class AccountBL_Manage implements AccountBLService_Manage{
 	
 	AccountDataService_Manage ds;
+	sfsdfsdkfivhdvhkfdhvkuhkivhdukhvu
 	
 	public AccountBL_Manage(AccountDataService_Manage ds){
 		this.ds=ds;
