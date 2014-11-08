@@ -1,8 +1,0 @@
-package blservice.commodityblservice;
-
-public interface CommodityBLService_SetWarningLine {
-	
-	public void setWarningLine (String id, int num);
-	//商品的警戒线数量设置为num
-
-}

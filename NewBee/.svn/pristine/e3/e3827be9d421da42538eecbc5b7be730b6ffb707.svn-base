@@ -1,8 +1,0 @@
-package blservice.accountblservice;
-
-public interface AccountBLService_Receive {
-	public void addToReceiveAccounts(String name, double money, String comment);
-	public void deleteFromReceiveAccounts(String name);
-	public void addReceiveClient(String name);
-	public boolean submitReceiveBill();
-}

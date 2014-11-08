@@ -1,9 +1,0 @@
-package blservice.strategyblservice;
-
-import vo.CommodityTreeVO;
-
-public interface StrategyBLS_ComInfo {
-	
-	public CommodityTreeVO getComTree ();
-
-}

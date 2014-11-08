@@ -1,9 +1,0 @@
-package blservice.clientblservice;
-
-import java.util.ArrayList;
-
-import vo.ClientVO;
-
-public interface ClientBLService_Info {
-	public ArrayList<ClientVO> getClientList();
-}

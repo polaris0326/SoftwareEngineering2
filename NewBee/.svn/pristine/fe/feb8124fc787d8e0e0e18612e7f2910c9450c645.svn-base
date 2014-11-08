@@ -1,7 +1,0 @@
-package blservice.commodityblservice;
-
-public interface CommodityBLService_AmountCheck {
-	public boolean isComEnough(String id, int amount);
-	//检查商品数量是否大于等于需求量
-
-}
