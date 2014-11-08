@@ -1,0 +1,16 @@
+package blservice.billblservice;
+
+public interface BillBLS_Approve_Deal {
+	
+	//用到client的transferhandle和comamounthandle
+	
+	public boolean approveSale(String id, int moreRebate);
+	//对于销售单若moreRebate大于应付额则返回false。否则，检查商品数量是否充足，若有任何商品不充足，返回false。若均充足，
+	//检查客户应收额度是否超过，若超过，返回false。
+	//若均检查通过，改变商品数量和客户应收额，将单据标记改为被通过。
+	
+	public boolean approveImport(String id);
+	//改变商品数量和客户应付额，将单据标记改为被通过
+	//若为进货退货单，需要检查库存数量是否足够
+	
+}

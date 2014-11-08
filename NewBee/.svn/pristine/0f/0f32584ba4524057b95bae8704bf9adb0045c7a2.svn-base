@@ -1,0 +1,10 @@
+package blservice.commodityblservice;
+
+import vo.CommodityTreeVO;
+
+public interface CommodityBLService_Info {
+	
+	public CommodityTreeVO getComTree();
+	//返回所有商品的树
+	
+}

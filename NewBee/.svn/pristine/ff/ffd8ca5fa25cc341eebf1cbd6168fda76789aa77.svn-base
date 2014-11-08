@@ -1,0 +1,19 @@
+package blservice_driver.commodityblservice_driver;
+
+import blservice.commodityblservice.CommodityBLService_Present;
+
+
+public class CommodityBLService_Present_Driver{
+	public void drive(CommodityBLService_Present commodityBLService_Present){
+		if(commodityBLService_Present.addPresentCom("xyz", 10))
+			System.out.println("Add Present Commodity Successfully");
+		
+		commodityBLService_Present.delPresentCom("xyz");
+		
+		
+		if(commodityBLService_Present.submitPresentBill())
+			System.out.println("Submit Presentbill Successfully");
+			
+	}
+
+}

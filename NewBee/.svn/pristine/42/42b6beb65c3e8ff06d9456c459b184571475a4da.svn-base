@@ -1,0 +1,12 @@
+package blservice_stub.commodityblservice_stub;
+
+import blservice.commodityblservice.CommodityBLService_SetWarningLine;
+
+public class CommodityBLService_SetWarningLine_Stub implements CommodityBLService_SetWarningLine{
+	
+	public void setWarningLine (String id, int num){
+	//商品的警戒线数量设置为num
+		System.out.println("Set Warningline Successfully");
+	}
+
+}

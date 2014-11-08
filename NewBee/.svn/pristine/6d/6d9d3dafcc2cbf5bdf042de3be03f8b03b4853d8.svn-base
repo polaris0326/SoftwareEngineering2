@@ -1,0 +1,12 @@
+package dataservice.strategydataservice;
+
+import java.util.ArrayList;
+
+import po.PresentStrategyPO;
+
+public interface StrategyDataService_Present {
+	
+	public ArrayList<PresentStrategyPO> getPresentStrategy();
+	public void insertPresentStrategy(PresentStrategyPO po);
+
+}
