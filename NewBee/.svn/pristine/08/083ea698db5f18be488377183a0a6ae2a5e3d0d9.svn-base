@@ -1,0 +1,16 @@
+package blservice.userblservice;
+
+import java.util.ArrayList;
+
+import vo.UserVO;
+
+public interface UserBLService_Manage {
+	public boolean addUser(UserVO vo);
+	//添加用户
+	public boolean deleteUser(String name);
+	//删除用户
+	public boolean modifyUser (UserVO vo);
+	//修改用户
+	public ArrayList<UserVO> getUserList();
+	//获取userList
+}

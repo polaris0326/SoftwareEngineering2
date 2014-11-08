@@ -1,0 +1,17 @@
+package blservice.strategyblservice;
+import java.util.ArrayList;
+import java.util.Date;
+
+import vo.*;
+
+public interface StrategyBLS_PresentStrategyManage {
+	
+	public CommodityTreeVO getComTree ();
+	
+	public void addPresentItem(String id, int amount);
+	public void delPresentItem(String id);
+	public boolean addPresentStrategy (Date d1, Date d2, double money, int clientLevel);
+	
+	public ArrayList<PresentStrategyVO> getPresentStrategyList();
+
+}

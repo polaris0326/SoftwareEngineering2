@@ -1,0 +1,10 @@
+package blservice.billblservice;
+
+import vo.BillVO;
+
+public interface BillBLS_ModifyAndApprove {
+	
+	public boolean modifyAndApprove(BillVO vo);
+	//检查修改后单据是否满足通过条件，满足的通过并执行相应操作。不满足的保持未决状态
+
+}

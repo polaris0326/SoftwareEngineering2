@@ -1,0 +1,14 @@
+package blservice.accountblservice;
+
+import java.util.ArrayList;
+import vo.AccountVO;
+
+public interface AccountBLService_Cash {
+	public void addToCashItem(String reason, double money, String comment);
+	public void deleteCashItem (String reason);
+	public void addCashAccount(String name);
+	public boolean submitCashBill();
+	//检查账户余额是否足够，若不足，返回false。若充足，向总经理提交现金费用单（CashBillPO），返回操作成功与否
+	
+	public ArrayList<AccountVO> getAccountList();
+}

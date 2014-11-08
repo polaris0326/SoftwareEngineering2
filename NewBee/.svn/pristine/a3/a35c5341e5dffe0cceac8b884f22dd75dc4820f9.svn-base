@@ -1,0 +1,21 @@
+package blservice.commodityblservice;
+
+import vo.ComCorrectBillVO;
+import vo.CommodityTreeVO;
+import vo.SetWarningLineBillVO;
+
+public interface CommodityBLService_ComAdjust {
+	public boolean correctCom(ComCorrectBillVO vo);
+	//若vo为报损单，检查报损量是否大于现有库存量，若是，返回false。若否，提交报损报溢单据至总经理
+	public boolean submitSetWarningLineBill(SetWarningLineBillVO vo);
+	//向总经理提交修改商品的库存警戒线为amount的请求，返回提交成功与否
+	
+	public boolean addPresentCom(String comID, int amount);
+	//检查商品库存量是否充足，若是，将一定数量商品加入赠品列表并返回true。若否，返回false。
+	public void delPresentCom(String comID);
+	//将对应商品从赠品列表删除
+	public boolean submitPresentBill();
+	//检查赠品列表是否为空，若是，返回false。若否，向总经理提交赠送请求单（PresentBillVO），返回提交成功与否
+	public CommodityTreeVO getComTree();
+
+}

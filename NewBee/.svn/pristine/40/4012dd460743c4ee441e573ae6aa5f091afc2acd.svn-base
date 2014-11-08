@@ -1,0 +1,13 @@
+package blservice.accountblservice;
+
+import java.util.ArrayList;
+
+import vo.AccountVO;
+import vo.ClientVO;
+
+public interface AccountBLService_Info {
+	
+	public ArrayList<AccountVO> getAccountList();
+	public ArrayList<ClientVO> getClientList();
+
+}

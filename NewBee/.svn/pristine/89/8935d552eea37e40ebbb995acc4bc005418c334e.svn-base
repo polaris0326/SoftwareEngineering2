@@ -1,0 +1,15 @@
+package blservice.billblservice;
+
+import java.util.ArrayList;
+import java.util.Date;
+
+import vo.BillVO;
+
+public interface BillBLS_Info_Search {
+	
+	public ArrayList<BillVO> searchBillRecord (Date d1, Date d2, String comName, 
+			String clientName, String clerkName, String storage, String billType);
+	
+	
+
+}

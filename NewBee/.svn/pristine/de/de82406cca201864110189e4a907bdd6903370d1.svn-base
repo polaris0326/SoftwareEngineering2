@@ -1,0 +1,17 @@
+package blservice_stub.strategyblservice_stub;
+
+import java.util.ArrayList;
+
+import blservice.salesblservice.SalesBLS_Manage;
+import vo.SalesBillVO;
+
+public class SalesBLS_Manage_Stub implements SalesBLS_Manage{
+	
+	public boolean deleteSale(String id){
+		return true;
+	}
+	public ArrayList<SalesBillVO> getSalesRecord(){
+		return new ArrayList<SalesBillVO>();
+	}
+
+}

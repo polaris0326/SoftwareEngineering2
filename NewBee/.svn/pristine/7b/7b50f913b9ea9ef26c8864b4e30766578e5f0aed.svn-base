@@ -1,0 +1,12 @@
+package blservice_driver.commodityblservice_driver;
+
+import blservice.commodityblservice.CommodityBLService_SetWarningLine;
+
+public class CommodityBLService_SetWarningLine_DriverTest implements CommodityBLService_SetWarningLine{
+	
+	public void setWarningLine (String id, int num){
+	//商品的警戒线数量设置为num
+		System.out.println("Success!");
+	}
+
+}
