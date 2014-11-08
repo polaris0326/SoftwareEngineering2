@@ -1,0 +1,12 @@
+package blservice_driver.commodityblservice_driver;
+
+import blservice.commodityblservice.CommodityBLService_AmountChange;
+
+public class CommodityBLService_AmountChange_DriverTest implements CommodityBLService_AmountChange{
+	
+	public void comAmountChange(String id, int offset){
+	//商品的库存量增加或减少，取决于offset的正负
+		System.out.println("Success!");
+	}
+
+}

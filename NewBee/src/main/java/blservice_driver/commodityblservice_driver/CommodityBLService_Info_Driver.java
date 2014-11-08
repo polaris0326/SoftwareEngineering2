@@ -1,0 +1,11 @@
+package blservice_driver.commodityblservice_driver;
+
+import blservice.commodityblservice.CommodityBLService_Info;
+public class CommodityBLService_Info_Driver{
+	public void drive(CommodityBLService_Info commodityBLService_Info){
+		commodityBLService_Info.getComTree();
+		System.out.println("Get Commodity Tree Successfully");
+	}
+	
+
+}

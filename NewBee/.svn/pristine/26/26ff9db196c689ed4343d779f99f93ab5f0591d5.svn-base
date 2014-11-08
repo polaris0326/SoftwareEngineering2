@@ -1,0 +1,11 @@
+package blservice.billblservice;
+
+import java.util.ArrayList;
+
+import vo.BillVO;
+
+public interface BillBLS_Info_Unsettled {
+	
+	public ArrayList<BillVO> getUnsettledBill();
+
+}

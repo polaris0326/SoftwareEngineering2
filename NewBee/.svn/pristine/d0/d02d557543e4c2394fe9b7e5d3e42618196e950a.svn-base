@@ -1,0 +1,8 @@
+package blservice.commodityblservice;
+
+import vo.CommodityTreeVO;
+
+public interface CommodityBLService_Info {
+	public CommodityTreeVO getComTree();
+
+}

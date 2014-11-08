@@ -1,0 +1,9 @@
+package blservice.userblservice;
+
+import vo.UserVO;
+
+public interface UserBLService_PWVerity {
+	public UserVO PWVerify(String name,String password);
+	//登录验证
+
+}

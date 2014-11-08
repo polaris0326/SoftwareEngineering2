@@ -1,0 +1,31 @@
+package blservice_driver.commodityblservice_driver;
+
+import blservice.commodityblservice.CommodityBLService_Manage;
+import vo.ComCorrectBillVO;
+import vo.CommodityVO;
+import vo.SetWarningLineBillVO;
+import vo.TypeVO;
+
+public class CommodityBLService_Manage_Driver{
+	public void drive(CommodityBLService_Manage commodityBLService_Manage){
+		if(commodityBLService_Manage.addCommodity(new TypeVO("abc", null, null, null),null))
+			System.out.println("Add Commodity Successfully");
+		
+		if (commodityBLService_Manage.deleteCommodity("abc"))
+			System.out.println("Delete Commodity Successfully");
+		
+		if(commodityBLService_Manage.modifyCommodity(new CommodityVO(null, null, null, 0, 0, 0, 0, 0)))
+			System.out.println("Modify Commodity Successfully");
+		
+		if(commodityBLService_Manage.correctCom(new ComCorrectBillVO(null, null, null, null, null, 0)))
+			System.out.println("Correct Commodity Successfully");
+		
+		if(commodityBLService_Manage.submitSetWarningLineBill(new SetWarningLineBillVO(null, null, null, null, null, 0)))
+			System.out.println("Submit SetWarninglinebill Successfully");
+		
+		commodityBLService_Manage.search("10");
+		System.out.println("Search Commodity Successfully");
+	}
+	
+	
+}

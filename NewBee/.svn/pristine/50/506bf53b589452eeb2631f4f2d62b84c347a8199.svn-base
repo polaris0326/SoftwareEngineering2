@@ -1,0 +1,28 @@
+package blservice_stub.strategyblservice_stub;
+
+import java.util.ArrayList;
+
+import blservice.salesblservice.SalesBLS_Add;
+import vo.ClientVO;
+import vo.CommodityTreeVO;
+
+public class SalesBLS_Add_Stub implements SalesBLS_Add{
+	
+	public CommodityTreeVO getCommodityTree(){
+		return new CommodityTreeVO();
+	}
+	public ArrayList<ClientVO> getClientList(){
+		return new ArrayList<ClientVO>();
+	}
+	public void addComItem(String id, int amount, double unit, String comment){
+		System.out.println("add item");
+	}
+	public void delComItem(String id){
+		System.out.println("Success!");
+	}
+	public boolean submitSalesBill(String client, String clerk, int stock, 
+			double rebate, double useVoucher, String comment){
+	//若销售列表为空或从用户界面得到的其他信息不完备，返回false。否则，自动计算完善SalesBillVO，提交至总经理审批
+		return true;
+	}
+}

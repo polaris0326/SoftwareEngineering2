@@ -1,0 +1,11 @@
+package blservice.billblservice;
+
+import java.util.ArrayList;
+
+public interface BillBLS_BatchApprove {
+	
+	public boolean batchApprove(ArrayList<String> ids);
+	//依次检查单据是否满足通过条件（参照以上），若满足则通过并检查下一单据，不满足的保持未决状态，直到检查完所有选中单据
+	
+
+}

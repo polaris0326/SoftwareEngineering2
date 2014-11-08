@@ -1,0 +1,10 @@
+package blservice.billblservice;
+
+import vo.BillVO;
+
+public interface BillBLS_BillEntrance {
+	
+	public boolean submitBill(BillVO vo);
+	
+
+}
