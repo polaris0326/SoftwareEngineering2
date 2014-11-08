@@ -1,8 +1,0 @@
-package blservice.billblservice;
-
-public interface BIllBLS_Clear {
-	
-	public void clear();
-	//期初建账完成，清除单据记录
-
-}
